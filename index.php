@@ -49,12 +49,4 @@ if (isset($_SESSION['sessionAccessToken'])) {
 		echo json_encode($displayString); 
 		?>
 	</code>
-
-	<p><strong>Company Info:</strong></p>
-	<code>
-		<?php
-		$displayString = isset($CompanyInfo) ? $CompanyInfo : "No Company Connected";
-		echo json_encode($CompanyInfo, JSON_PRETTY_PRINT); 
-		?>
-	</code>
 </body>
